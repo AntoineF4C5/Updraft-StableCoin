@@ -64,30 +64,22 @@ make deploy
 
 ## Interacting with the contract
 
-### Currently only works on anvil chain as it tries to mint the required collateral
-
 To deposit collateral:
 
 ```
-make deposit ARGS="<token> <amount in ether>"
+make deposit ARGS="<token> <amount>"
 ```
+
+Also, when on the anvil chain, you can mint some wETH using `make mintWeth`
 
 The available values for "token" are: weth, wbtc
 
-As suggested, the amount given will be multiplied by 1e18
-
-For example, using
-
-```
-make deposit ARGS="weth 1"
-```
-
-will deposit 1 wETH to the contract
+For example, using `make deposit ARGS="weth 1000000000000000000"` will deposit 1 wETH to the contract
 
 To redeem:
 
 ```
-make redeem ARGS="<token> <value in ether>"
+make redeem ARGS="<token> <amount>"
 ```
 
 To view the current deposited collateral for a given token:
