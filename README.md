@@ -62,7 +62,7 @@ To deploy the contracts:
 make deploy
 ```
 
-## Interacting with the contract
+## Interacting with the contract on anvil chain
 
 To deposit collateral:
 
@@ -92,7 +92,9 @@ There are also a few other functions to discover, including minting some DSC, vi
 
 By default, if you do not enter any ARGS value, the collateral token will be set to weth, and the amount to 1e18.
 
-## Deploying to other chains
+## Interacting on other chains
+
+#### Currently the only alternative chain available is sepolia Ethereum testnet.
 
 Also, you can use those functions on sepolia testnet by adding "RPC=testnet" to the above functions, as in the example:
 
